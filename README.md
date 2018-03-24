@@ -1,4 +1,4 @@
-# ApertureSciences
+# ApertureScience
 A project originally for a friend, inspired by the game Portal. 
 
 Assuming you have correctly installed the following:
