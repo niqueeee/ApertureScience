@@ -1,0 +1,97 @@
+@font-face {
+	font-family: "InnerCity";
+	src: url(assets/fonts/InnercityRegular.otf) format("opentype");
+}
+
+#admin-page{
+	background:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../new-img/hallway.jpeg) no-repeat center top;
+	height: 100%;
+	background-size: 200%;
+	background-attachment: relative;
+	margin-left: -20px;
+}
+
+.disable-select {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+.cake {
+	text-align: center;
+	padding-top: 125px;
+}
+
+.cake-p{
+	text-align: justify;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 30px;
+	text-indent: 50px;
+	color: #fffff0;
+}
+
+h1 {
+	color: white;
+}
+
+#sign-header {
+	color: white;
+	overflow: hidden;
+}
+
+ /*for fieldset*/
+.sign {
+	float: left;
+}
+
+.sign a {
+	color: white;
+}
+
+.sign a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.right-side {
+	float: right;
+}
+
+#aperture-bar {
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	background: #424a5d;
+}
+
+#aperture-bar h5 {
+	color: #f2f2f2;
+	font-weight: 700;
+}
+
+#create {
+	background-color: #ffd777;;
+	border-color: white;
+	border-radius: 20px;
+	border-style: double;
+	border-width: 10px;
+	height: 400px;
+}
+
+#create img {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	margin-left: 110px;
+	color: #989898;
+}
+
+
+.card:hover {
+	box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+
