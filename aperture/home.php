@@ -1,10 +1,14 @@
-<?php include('head-shop.php') ?>
-<body bgcolor="#1d1d1d">
-<div class="men_banner">
+<?php include('head-shop.php');
+  
+
+?>
+<body style="background-image: url(assets/img/login-bg.jpg);">
+	<div class="banner">
+
    	  <div class="container">
    	  	<div class="header_top">
    	  	   <div class="header_top_left">
-	  	      <div class="box_11"><a href="checkout.html">
+	  	      <div class="box_11"><a href="#">
 		      <h4><p>Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</p><img src="images/bag.png" alt=""/><div class="clearfix"> </div></h4>
 		      </a></div>
 	          <p class="empty"><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
@@ -18,13 +22,6 @@
 					<option value="2">Euro</option>
 				</select>
 			 </div>
-			 <ul class="header_user_info">
-			  <a class="login" href="login.html">
-				<i class="user"> </i> 
-				<li class="user_desc">My Account</li>
-			  </a>
-			  <div class="clearfix"> </div>
-		     </ul>
 		    <!-- start search-->
 				<div class="search-box">
 				   <div id="sb-search" class="sb-search">
@@ -35,28 +32,30 @@
 					  </form>
 				    </div>
 				 </div>
-				 <!----search-scripts---->
-				 <script src="js/classie1.js"></script>
-				 <script src="js/uisearch.js"></script>
+				 
+				 <script src="assets/js/classie1.js"></script>
+				 <script src="assets/js/uisearch.js"></script>
 				   <script>
 					 new UISearch( document.getElementById( 'sb-search' ) );
 				   </script>
-					<!----//search-scripts---->
+					
 		            <div class="clearfix"> </div>
 			 </div>
 		     <div class="clearfix"> </div>
-	    </div>
-   	  <div class="header_bottom">
-	   <div class="logo">
-		  <h1><a href="index.html"><span class="m_1">W</span>atches</a></h1>
-	   </div>
-	   <
+	  </div>
+	  <div class="header_bottom">
+   	   <div class="menu">
+	     <ul class="megamenu skyblue">
+	     	<li class="active grid"><a class="color3" href="#">Home</a></li>
+			<li><a class="color2" href="shop.php">Shop</a></li>	
+			<li><a class="color2" href="#">Contact Us</a></li>			
+				
+				<div class="clearfix"> </div>
+			</ul>
 			</div>
 	        <div class="clearfix"> </div>
+	        </div>
 	    </div>
-	  </div>
-   </div>
- 
    </div>
 </body>
-</html>		
+</html>

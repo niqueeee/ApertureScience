@@ -21,14 +21,14 @@ body a{
 	-ms-transition:0.5s all;
 }
 .banner {
-	background: url(assets/new-img/banner.jpeg) no-repeat center top;
+	background-image:url(assets/new-img/banner.jpeg);
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	min-height:800px;
 	text-align: center;
-	padding-top:1em;
+	padding-top:1em; 
 }
 .header_top_left{
 	float:left;
@@ -1046,7 +1046,7 @@ ul.social li a i.tw{
 	padding: 5em 0 2em;
 }
 .men_banner {
-	background: url(../images/3.jpg) no-repeat center top;
+	background-image: url(assets/img/login-bg.jpg);
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
