@@ -21,7 +21,7 @@ body a{
 	-ms-transition:0.5s all;
 }
 .banner {
-	background-image:url(assets/new-img/banner.jpeg);
+	background-image:url(assets/new-img/banner.jpg);
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

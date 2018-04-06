@@ -1,4 +1,8 @@
-<?php include ('head.php'); ?>
+<?php include ('head.php'); 
+
+
+
+?>
 
 <body>
   <header>
@@ -101,11 +105,11 @@
                           Upload Picture:</label>
                         <input type="file" name="image" class="form-control validate">
                       </div>
-
+                      <br><br>
                       <div class="text-center mt-4">
                         <button class="btn btn-primary" type="submit" id="addCreate" name="addCreate" value="ADD">ADD</button>
                       </div>
-                     <?php include "add.php" ?>
+                     <?php include_once "add.php" ?>
                     </fieldset>
                   </form>
                 </div>
@@ -113,7 +117,7 @@
             </div>
           </div>
         </div>
-        <?php include ('select.php'); ?>
+        <?php include_once ('select.php'); ?>
   </section>
 
 </body>

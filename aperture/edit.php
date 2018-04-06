@@ -1,11 +1,12 @@
 <?php require_once "connect.php";
-?>
-<div class="modal-body">
 
-  <form action="admin-dashboard.php" method="POST" ">
+?>
+
+  <form method="POST">
   <fieldset>
+    <?php echo $_GET['edit_id']; ?>
     <div class="md-form">
-      <label data-error="wrong" data-success="right" for="newName" value="<?php echo $name; ?>">Edit Name:</label>
+      <label data-error="wrong" data-success="right" for="newName" >Edit Name:</label>
       <input type="text" name="newName" class="form-control validate">
     </div>
 
@@ -22,40 +23,28 @@
     <div class="text-center mt-4">
       <input class="btn btn-primary" type="submit" id="editValue" name="editValue" value="EDIT">
     </div>
-    <?php /*
-      if (isset($_POST['editValue'])) {
-          $name= $_POST['newName'];
-          $desc= $_POST['newDesc'];
-          $price= $_POST['newPrice'];
 
-          if ($name == '' || $desc == ''){
-            $error = 'ERROR: Please fill in all required fields!';
-            renderForm($name, $desc, $price, $pic);
-          } else {
-            mysql_query("UPDATE players SET name='$name', proddesc='$desc', price='$price' WHERE id='$id'");
-            or die(mysql_error());
-          }
+    <?php 
 
-          if (isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] > 0){
-            $id = $_GET['id'];
-            $result = mysql_query("SELECT * FROM players WHERE id=$id") or die(mysql_error());
-            $row = mysql_fetch_array($result);
+    if (isset($_POST['editValue'])) {
+        $name= $_POST['newName'];
+        $desc= $_POST['newDesc'];
+        $price= $_POST['newPrice'];
 
-            if($row) {
-              $firstname = $row['firstname'];
-              $lastname = $row['lastname'];
-              renderForm($id, $firstname, $lastname, '');
+        $selectQuery= "UPDATE prod_tbl SET name='".$name. "', proddesc='".$desc. "', price=" .$price. " WHERE id=". $_GET['edit_id'];
+        mysqli_query($con, $selectQuery); 
+        header ("Location: admin-dashboard.php");
 
-              } else {echo "No results!";}
+      } else echo mysqli_error($con);
 
-            } else {echo 'Error!'; }
-          }
-*/
-  ?>
+
+
+    ?>
+
 
 </fieldset>
 </form>
-</div>
+
 <script type="text/javascript">
   
 </script>

@@ -70,21 +70,20 @@
 	</form>
 	</div>
 
-<?php
+<?php include ("connect.php");
 		if (isset(($_POST["login"]))) {
 			$email=$_POST['email-log'];
 			$password= $_POST['passwordd'];
 
 
-			$con= mysqli_connect('localhost', 'root', '1234') or die(mysql_error());
-			mysqli_select_db($con,'aperture') or die(mysql_error());
+
 			$select= "SELECT * FROM admin_tbl WHERE email='$email' AND password='$password'";
 
 			$query= mysqli_query($con, $select);
 			$numrows= mysqli_num_rows($query);
 
 			if ($numrows) {
-			header("Location: sample.php");
+			header("Location: admin-dashboard.php");
 			exit;
 			} else "Account not located. You may want to REGISTER.";
 
@@ -94,9 +93,7 @@
 		if (isset(($_POST["register"]))) {
 			$user=$_POST['email'];
 		
-			$con= mysqli_connect('localhost', 'root', '1234') or die(mysql_error());
-			mysqli_select_db($con,'aperture') or die(mysql_error());
-
+			
 			$search="SELECT * from admin_tbl WHERE email='$user'";
 			$q= mysqli_query($con, $search);
 			$damnresults= mysqli_num_rows($q);

@@ -2,8 +2,8 @@
   
 
 ?>
-<body style="background-image: url(assets/img/login-bg.jpg);">
-	<div class="banner">
+<body>
+ 	<div class="banner">
 
    	  <div class="container">
    	  	<div class="header_top">
@@ -15,13 +15,7 @@
 	          <div class="clearfix"> </div>
 	       </div>
            <div class="header_top_right">
-		  	 <div class="lang_list">
-				<select tabindex="4" class="dropdown">
-					<option value="" class="label" value="">$ Us</option>
-					<option value="1">Dollar</option>
-					<option value="2">Euro</option>
-				</select>
-			 </div>
+		  	
 		    <!-- start search-->
 				<div class="search-box">
 				   <div id="sb-search" class="sb-search">

@@ -1,9 +1,9 @@
 <?php 
 	
  
-$localhost = "127.0.0.1"; 
+$localhost = "localhost:3307"; 
 $username = "root"; 
-$password = "1234"; 
+$password = ""; 
 $dbname = "aperture"; 
  
 // create connection 
