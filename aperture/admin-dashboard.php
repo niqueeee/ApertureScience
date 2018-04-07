@@ -103,7 +103,7 @@
                       <div class="md-form">
                         <label data-error="wrong" data-success="right" for="image">
                           Upload Picture:</label>
-                        <input type="file" name="image" class="form-control validate">
+                        <input type="file" name="image">
                       </div>
                       <br><br>
                       <div class="text-center mt-4">
