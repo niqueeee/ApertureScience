@@ -19,6 +19,7 @@
     <script type="text/javascript" src="assets/for-shop/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="assets/for-shop/js/responsive-nav.js"></script>
     <script type="text/javascript" src="assets/for-shop/js/uisearch.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="application/x-javascript"> 
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
     </script>

@@ -17,7 +17,7 @@
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
 						    <ul class="nav" id="nav">
 						    	<li><a href="shop.php">Shop</a></li>
-						    	<li><a href="cart.php">Cart</a></li>
+						    	<li><a href="incart.php">Cart</a></li>
 						    	<li><a href="checkout">Checkout</a></li>
 						    	<li><a href="contact.php">Contact</a></li>
 						    								
